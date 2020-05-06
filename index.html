@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>FCC: Survey Form</title>
 </head>
 <body>
     <header>
-        <h1>freeCodeCamp Survey Form</h1>
-        <p>Thank you for taking the time to help us improve the platform</p>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
     </header>
     <main>
         <form action="#">
-            <div>
+            <div class="field-div">
                 <label for="name-field">Name</label>
                 <input type="text" id="name-field" placeholder="Enter your name">
             </div>
-            <div>
+            <div class="field-div">
                 <label for="email-field">Email</label>
                 <input type="email" id="email-field" placeholder="Enter you Email">
             </div>
-            <div>
+            <div class="field-div">
                 <label for="age-field">Age (optional)</label>
-                <input type="number" id="age-field" min="10" max="99">
+                <input type="number" id="age-field" min="10" max="99" placeholder="Age">
             </div>
-            <div>
-                <label for="current-role-field">Which option best describes your current role?</label>
+            <div class="selection-div">
+                <p>Which option best describes your current role?<p>
                 <select name="current-role" id="current-role-field">
                     <option value="_" selected disabled>Select current role</option>
                     <option value="student">Student</option>
@@ -43,7 +45,7 @@
                     <input type="radio" name="rec"><label for="not-sure">Not sure</label>
                 </div>
             </div>
-            <div>
+            <div class="selection-div">
                 <p>What is your favorite feature of freeCodeCamp</p>
                 <select name="#" id="favorite-field">
                     <option value="_" selected disabled>Select an option</option>
