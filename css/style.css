@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 :root {
     background: url("../images/background.jpg") no-repeat center fixed;
     background-size: cover;
     color: white;
     font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 body {
    background-color: rgba(81, 81, 139, 0.75);
-   padding: 5% 15% 0 15%; 
+   padding: 5% 12% 0 12%; 
 }
 /*HEADER STYLES*/
 header {
@@ -52,11 +56,88 @@ div.selection-div p {
 }
 
 div.selection-div select {
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.5rem;
     width: 100%;
     height: 1rem;
     border-radius: 5px;
     border-style: none;
     height: 1.3rem;
     padding-left: 1rem;
+}
+
+div.button-div {
+    margin-bottom: 1rem;
+}
+
+div.button-div p {
+    margin-bottom: 0.5rem;
+}
+
+div.rec-options {
+    display: flex;
+    flex-direction: column;
+}
+
+div.rec-options div {
+    margin-bottom: 0.5rem;
+}
+
+div.rec-options > div > input {
+    margin-right: 0.5rem;
+}
+
+div.improve-div {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+div.improve-div > * {
+    margin-bottom: 0.5rem;
+}
+
+div.improve-div > div > input {
+    margin-right: 0.5rem;
+}
+
+div.comments-div {
+    margin-bottom: 1rem;
+}
+
+div.comments-div > p {
+    margin-bottom: 0.5rem;
+}
+
+div.comments-div > textarea {
+    width: 99%;
+}
+
+button {
+    background-color: #37AF65;
+    color: white;
+    width: 100%;
+    height: 2rem;
+    border-style: none;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 5% 0 0 0;
+    }
+
+    form {
+        border-radius: 1px;
+    }
+
+    div.field-div {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        padding: 5% 30% 0 30%;
+    }
 }
